@@ -1,0 +1,16 @@
+export const WORDS = [
+  "hello",
+  "world",
+  "puple",
+  "words",
+  "tuple",
+  "hands",
+  "panda",
+  "petal",
+  "soups",
+  "slaps",
+  "bands",
+  "purge",
+  "soaps",
+  "early",
+];
