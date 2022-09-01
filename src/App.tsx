@@ -18,6 +18,14 @@ function App() {
   }, []);
 
   const onKeyPress = (e: KeyboardEvent) => {
+    if (e.key === "Backspace") {
+      const guess = currentGuess.slice(0, -1);
+      setCurrentGuess(guess);
+      const wordsCopy = [...words];
+      wordsCopy[guessCount] = guess;
+      setWords(wordsCopy);
+    }
+
     if (e.key === "Enter" && currentGuess.length === 5) {
       setGuessCount((s) => ++s);
       setCurrentGuess("");
