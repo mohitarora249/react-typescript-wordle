@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const useKeyboard = (callback, deps = []) => {
+const useKeyboard = (callback: (e: KeyboardEvent) => void, deps: any[] = []) => {
   useEffect(() => {
     document.addEventListener("keyup", callback);
     return () => {
